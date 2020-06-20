@@ -24,6 +24,7 @@
 <h3>Result</h3>
 <p>following text should appear on screen</p>
 <ul>
+  <p>python task4.py multifile</p>
   <p>remotehost: access count</p>
   <p>10.2.3.4: 3</p>
   <p>timstamp, access count</p>
