@@ -7,11 +7,11 @@ from datetime import datetime
 def query():
     date_format = "%Y/%m/%d"
 
-    print("Enter Query Date ; Y/M/D-Y/M/D")
+    print("Enter mining Date ; Y/M/D-Y/M/D")
     print("eg. 2005/4/1-2005/4/30")
     period = input("Input: ")
     period=period.split("-")
-    print("query result(s)")
+    print("mining result(s)")
     for file in os.listdir(target):
         try:
             with open(os.path.join(target, file)) as f:
@@ -62,11 +62,11 @@ for file in os.listdir(target):
     except:
         pass
 
+host=sorted(host, reverse=True)
 print("remotehost: access count")
 for x in host:
     print(str(x[0])+": "+str(x[1]))
 print("timstamp, access count")
-print
 for x in time:
     print(str(x[0])+": "+str(x[1]))
 print("Mine Data By Date? Y/N")
