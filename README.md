@@ -13,6 +13,6 @@
 <h3>How to Use</h3>
 <ol>
   <li>Install Python 3.x (preferably version3.7.4)</li>
-  
-  <li>In command line run "python task4.py multifile"</li>
+  <li>Download and unzip "FixPointTask-master"</li>
+  <li>In command line move to directory "FixPointTask-master" and run "python task4.py multifile"</li>
 </ol>
