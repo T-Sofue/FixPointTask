@@ -1,4 +1,4 @@
-# FixPointTask
+# FixPoint Task
 このプログラムはフィックスポイント プログラミング試験問題の解答です。
 <p>Tested Environment: Python 3.7.4</p>
 <p>Program should run in Python version 3.x</p>
@@ -16,3 +16,12 @@
   <li>Download and unzip "FixPointTask-master"</li>
   <li>In command line move to directory "FixPointTask-master" and run "python task4.py multifile"</li>
 </ol>
+
+<p>following text should appear on screen</p>
+<ul>
+  <p>remotehost: access count</p>
+  <p>10.2.3.4: 3</p>
+  <p>timstamp, access count</p>
+  <p>18/4/2005:00:10:47: 3</p>
+  <p>Mine Data By Date? Y/N</p>
+</ul>
