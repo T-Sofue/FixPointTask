@@ -25,3 +25,10 @@
   <p>18/4/2005:00:10:47: 3</p>
   <p>Mine Data By Date? Y/N</p>
 </ul>
+```
+remotehost: access count
+10.2.3.4: 3
+timstamp, access count
+18/4/2005:00:10:47: 3
+Mine Data By Date? Y/N
+```
