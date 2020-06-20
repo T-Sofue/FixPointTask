@@ -21,6 +21,7 @@
   <p>run "python task4.py singlefile" which contains single logfile</p>
   <p>run "python task4.py multifile" which contains two logfiles</p>
 </ol>
+<p>If you would want to access logfile of your own in different path, instead of the demo prepared, you should edit variable "target" in line 35 to your desired path. Make sure you moved all of your logfile(s) to the new directory if anything else than logfile exists in that directory</p>
 <h3>Result</h3>
 <p>following result should appear on screen</p>
 <ul>
