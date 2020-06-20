@@ -34,7 +34,7 @@
   <p>eg. 2005/4/1-2005/4/30</p>
   <p>Input: 2005/4/1-2005/4/30</p>
   <p>query result(s)</p>
-  <p>10.2.3.4 - - [18/Apr/2005:00:10:47 +0900] "GET / HTTP/1.1" 200 854 "-" "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"
+10.2.3.4 - - [18/Apr/2005:00:10:47 +0900] "GET / HTTP/1.1" 200 854 "-" "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"
 
 10.2.3.4 - - [18/Apr/2005:00:10:47 +0900] "GET /style.css HTTP/1.1" 200 102 "http://www.geekpage.jp/" "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"
 
