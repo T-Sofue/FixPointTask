@@ -16,11 +16,12 @@
   <li>Download and unzip "FixPointTask-master"</li>
   <li>In command line move to directory with "task4.py"</li>
   <li>run "python task4.py --directory name" to execute program</li>
+  <li>Enter Y/N (y/n) to mine logfile based on date</li>
   <p></p>
   <p>run "python task4.py singlefile" which contains single logfile</p>
   <p>run "python task4.py multifile" which contains two logfiles</p>
 </ol>
-
+<h3>Result</h3>
 <p>following text should appear on screen</p>
 <ul>
   <p>remotehost: access count</p>
@@ -28,4 +29,14 @@
   <p>timstamp, access count</p>
   <p>18/4/2005:00:10:47: 3</p>
   <p>Mine Data By Date? Y/N</p>
+  <p>Y</p>
+  <p>Enter Query Date ; Y/M/D-Y/M/D</p>
+  <p>eg. 2005/4/1-2005/4/30</p>
+  <p>Input: 2005/4/1-2005/4/30</p>
+  <p>query result(s)</p>
+  <p>10.2.3.4 - - [18/Apr/2005:00:10:47 +0900] "GET / HTTP/1.1" 200 854 "-" "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"
+
+10.2.3.4 - - [18/Apr/2005:00:10:47 +0900] "GET /style.css HTTP/1.1" 200 102 "http://www.geekpage.jp/" "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"
+
+10.2.3.4 - - [18/Apr/2005:00:10:47 +0900] "GET /img/title.png HTTP/1.1" 304 - "http://www.geekpage.jp/" "Mozilla/4.0 (compatible; MSIE 5.5; Windows 98)"
 </ul>
