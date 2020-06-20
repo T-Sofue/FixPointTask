@@ -14,7 +14,10 @@
 <ol>
   <li>Install Python 3.x (preferably version3.7.4)</li>
   <li>Download and unzip "FixPointTask-master"</li>
-  <li>In command line move to directory "FixPointTask-master" and run "python task4.py multifile"</li>
+  <li>In command line move to directory with "task4.py"</li>
+  <li>run "python task4.py --directory name" to execute program</li>
+  <p>run "python task4.py singlefile" which contains single logfile</p>
+  <p>run "python task4.py multifile" which contains two logfiles</p>
 </ol>
 
 <p>following text should appear on screen</p>
@@ -25,10 +28,3 @@
   <p>18/4/2005:00:10:47: 3</p>
   <p>Mine Data By Date? Y/N</p>
 </ul>
-```
-remotehost: access count
-10.2.3.4: 3
-timstamp, access count
-18/4/2005:00:10:47: 3
-Mine Data By Date? Y/N
-```
