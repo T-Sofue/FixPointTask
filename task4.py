@@ -15,17 +15,16 @@ def query():
     for file in os.listdir(target):
         try:
             with open(os.path.join(target, file)) as f:
-                content = f.readlines()
-            for line in content:
-                extract=line.split(" ")
-                hms=extract[3][12:].split("/")
-                convtime=extract[3][1:-9].split("/")
-                month=datetime.strptime(convtime[1], "%b").month
-                t2=convtime[2]+"/"+str(month)+"/"+convtime[0]
-                if period[0] <= t2 <= period[1]:
-                    print(line)
-                else:
-                    pass
+                for line in f:
+                    extract=line.split(" ")
+                    hms=extract[3][12:].split("/")
+                    convtime=extract[3][1:-9].split("/")
+                    month=datetime.strptime(convtime[1], "%b").month
+                    t2=convtime[2]+"/"+str(month)+"/"+convtime[0]
+                    if period[0] <= t2 <= period[1]:
+                        print(line)
+                    else:
+                        pass
         except:
             pass
 #Target directory is the directory where your logfile(s) exit
@@ -40,25 +39,24 @@ time = []
 for file in os.listdir(target):
     try:
         with open(os.path.join(target, file)) as f:
-            content = f.readlines()
-        for line in content:
-            extract=line.split(" ")
-            hn = [i[0] for i in host]
-            if extract[0] in hn:
-                loc=hn.index(extract[0])
-                host[loc][1]+=1
-            else:
-                host.append([extract[0],1])
-            hms=extract[3][12:].split("/")
-            convtime=extract[3][1:-9].split("/")
-            month=datetime.strptime(convtime[1], "%b").month
-            t = convtime[0]+"/"+str(month)+"/"+convtime[2]+hms[0]
-            st = [i[0] for i in time]
-            if t in st:
-                loc=st.index(t)
-                time[loc][1]+=1
-            else:
-                time.append([t,1])
+            for line in f:
+                extract=line.split(" ")
+                hn = [i[0] for i in host]
+                if extract[0] in hn:
+                    loc=hn.index(extract[0])
+                    host[loc][1]+=1
+                else:
+                    host.append([extract[0],1])
+                hms=extract[3][12:].split("/")
+                convtime=extract[3][1:-9].split("/")
+                month=datetime.strptime(convtime[1], "%b").month
+                t = convtime[0]+"/"+str(month)+"/"+convtime[2]+hms[0]
+                st = [i[0] for i in time]
+                if t in st:
+                    loc=st.index(t)
+                    time[loc][1]+=1
+                else:
+                    time.append([t,1])
     except:
         pass
 
