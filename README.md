@@ -16,6 +16,7 @@
   <li>Download and unzip "FixPointTask-master"</li>
   <li>In command line move to directory with "task4.py"</li>
   <li>run "python task4.py --directory name" to execute program</li>
+  <p></p>
   <p>run "python task4.py singlefile" which contains single logfile</p>
   <p>run "python task4.py multifile" which contains two logfiles</p>
 </ol>
